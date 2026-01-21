@@ -15,7 +15,7 @@ namespace FlappyBird
     {
         public MainWindow()
         {
-            InitializeComponent();
+            
         }
     }
 }
