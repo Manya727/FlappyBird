@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace FlappyBird
 {
@@ -15,7 +16,16 @@ namespace FlappyBird
     {
         public MainWindow()
         {
-            
-        }
+        public readonly DispatcherTimer jatekciklusIdozito = new DispatcherTimer();
+
+        public double MadarSebesseg;
+        public const double Gravitacio = 0.55;
+        public const double UgrasSebesseg = -8.5;
+
+        public bool Start;
+        public bool Ending;
+
+        public readonly Random veletlen = new Random();
+    }
     }
 }
